@@ -1,0 +1,1 @@
+Para inicializar a ferramenta de teste Jest, basta entrar na pasta que deseja realizar os testes (nesse caso, é a pasta carrinho), inicializar o pacote npm, e rodar o comando 'npm run test' :)
