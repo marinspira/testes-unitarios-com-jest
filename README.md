@@ -1,1 +1,3 @@
-Para inicializar a ferramenta de teste Jest, basta entrar na pasta que deseja realizar os testes (nesse caso, é a pasta carrinho), inicializar o pacote npm, e rodar o comando 'npm run test' :)
+Para inicializar a ferramenta de teste Jest, basta entrar na pasta que deseja realizar os testes (nesse caso, é a pasta carrinho), inicializar o pacote npm, e rodar o comando 'npm run test', ou 'npm run test:watch' para rodar os testes automaticamente após qualquer atualização.
+
+Em testes-unitarios-com-jest\coverage\lcov-report\index.html é possível ver um relatório detalhado sobre os testes executados.
