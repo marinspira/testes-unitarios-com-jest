@@ -6,7 +6,7 @@ describe('Testes do carrinho', () => {
         const carrinho = new Carrinho();
 
         expect(carrinho.subtotal).toBeNull();
-    })
+    });
 
     it('Deve ter itens', () => {
         const item = new Item('Banana', 2, 5);
@@ -22,5 +22,15 @@ describe('Testes do carrinho', () => {
 
         expect(carrinho.itens).toContain(item);
         expect(carrinho.itens).toContain(item2);
-    })
-})
+    });
+
+    it('Deve lançar erro ao finalizar compra com carrinho vazio', () => {
+
+        function englobaErroCarrinho() {
+            const carrinho = new Carrinho();
+            carrinho.finalizaCompra();
+        }
+
+        expect(englobaErroCarrinho).toThrowError('Carrinho de compras vazio');
+    });
+});
